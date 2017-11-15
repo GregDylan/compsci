@@ -13,6 +13,6 @@ public class Nov1517 {
 			sum += (i / 2);
 		}
 		
-		return sum;
+		return 0;
 	}
 }
