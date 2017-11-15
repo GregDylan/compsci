@@ -81,7 +81,9 @@ public class myUtils {
 	//this method will return true if the number is odd, false otherwise
 	public boolean isOdd (int a)
 	{
-		
+		if(a % 2 != 0){
+			return true;
+		}
 		return false;
 	}
 	
@@ -89,7 +91,9 @@ public class myUtils {
 	//this method will return true if the number is even, false otherwise
 	public boolean isEven (int a)
 	{
-		
+		if(a % 2 == 0){
+			return true;
+		}
 		return false;
 	}
 	

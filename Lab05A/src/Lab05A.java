@@ -43,8 +43,10 @@ public class Lab05A {
 		
 		System.out.println(m.middleChar("Highland Park"));
 		//#11 println whether 444 is even or not
-		//#12 println whether 444 is odd or not
 		
+		System.out.println(m.isEven(444));
+		//#12 println whether 444 is odd or not
+		System.out.println(m.isOdd(444));
 		//additional checks --
 		//does lastChars and firstChars work with negative numbers?
 		//does lastChars and firstChars work if the number is less than the length of the word?
