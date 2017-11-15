@@ -1,6 +1,8 @@
 import java.util.Random;
 
-//your name here
+//Matteo Cordray
+//1st Period
+
 public class myUtils {
 	
 	Random r = new Random();
