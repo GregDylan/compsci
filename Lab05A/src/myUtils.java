@@ -32,15 +32,13 @@ public class myUtils {
 	return r.nextInt(a-b) + b;			
 	}
 	
-
-
-	
 //***************************************************************************
 	//this method will return a number that is rounded to N decimals
 	public double roundN (double x, int n)
 	{
-		
-		return 0.0;
+		int tens = (int) Math.pow(10, n);
+		x = (double) Math.round(x * tens) / tens;
+		return x;
 	}
 	
 
@@ -50,8 +48,11 @@ public class myUtils {
 	// if 'n' is negative, return an empty string
 	public String firstChars (String s, int n)
 	{
+		if(s.length() < n || n < 0){
+			return "";
+		}
 		
-		return "";
+		return s.substring(0, n);
 	}
 		
 //***************************************************************************
@@ -60,8 +61,11 @@ public class myUtils {
 	// if 'n' is negative, return an empty string
 	public String lastChars (String s, int n)
 	{
+		if(s.length() < n || n < 0){
+			return "";
+		}
 		
-		return "";
+		return s.substring(n + 1);
 	}
 	
 //***************************************************************************
@@ -70,8 +74,7 @@ public class myUtils {
 	// if the length of the string is odd, return the middle char
 	public char middleChar (String s)	
 	{
-		
-		return 0;
+		return s.charAt((s.length() / 2));
 	}
 	
 //***************************************************************************
