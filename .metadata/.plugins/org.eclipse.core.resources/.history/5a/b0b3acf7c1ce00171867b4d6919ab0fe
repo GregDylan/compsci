@@ -1,5 +1,8 @@
 import java.util.Random;
 
+//Matteo Cordray
+//1st Period
+
 public class myUtils {
 	
 	Random r = new Random();
