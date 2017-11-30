@@ -3,8 +3,25 @@ public class WeaponRunner {
 	public static void main (String [] args)
 	{
 		Weapon w = new Weapon();
-		w.setAlive(false);
-		print("Ability is: " + w.getAbility());
+		Weapon w2 = new Weapon("Gun", 30, 100);
+		
+		print("" + w);
+		
+		print("" + w.getDamage());
+		print("" + w.isAlive());
+		
+		print("" + w2.getDamage());
+		print("" + w2.isAlive());
+		
+		w.setDamage(10);
+		w.setAlive(false);	
+		
+		w2.setDamage(50);
+		w2.setAlive(true);
+		
+		print("" + w2.calcAdvantage());
+		print("" + w.calcAdvantage());
+		
 		
 //		out.println (d);
 //		out.println(d.getBark());

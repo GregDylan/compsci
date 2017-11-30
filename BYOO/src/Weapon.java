@@ -27,8 +27,19 @@ public class Weapon {
 		return false;
 	}
 	
-	public int getWinPercent(){
-		return 0;
+	public boolean getWin(){
+		if(!isAlive()){
+			if(damage >= 0){
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public int calcAdvantage(){
+		int i = 0;
+		i = this.damage * this.health;
+		return i;
 	}
 	
 	public int getStatpercent(){
