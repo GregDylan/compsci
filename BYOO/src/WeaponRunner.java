@@ -30,19 +30,7 @@ public class WeaponRunner {
 		
 		print("" + w2);
 		print("" + w);
-		
-		
-//		out.println (d);
-//		out.println(d.getBark());
-	
-//		d.setStuff(4,10);
-//		out.println (d);
-//		out.println(d.getBark());
-		
-//		Dog h = new Dog ();
-//		out.println(h);
-//			out.println (h.getBark());
-//			
+				
 	}
 	
 	public static void print(String p){

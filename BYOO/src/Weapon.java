@@ -1,3 +1,5 @@
+import java.util.Random;
+
 
 public class Weapon {
 
@@ -6,6 +8,7 @@ public class Weapon {
 	private int health;
 	private boolean alive;
 	private double price;
+	Random r = new Random();
 	
 	public Weapon(){
 		setName("Sword");
@@ -43,7 +46,10 @@ public class Weapon {
 	}
 	
 	public int getStatpercent(){
-		return 0;
+		
+		int i = r.nextInt(100);
+		
+		return i * health * damage;
 	}
 	
 	public void setStats(int damage, int health){
