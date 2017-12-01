@@ -22,6 +22,15 @@ public class WeaponRunner {
 		print("" + w2.calcAdvantage());
 		print("" + w.calcAdvantage());
 		
+		print("" + w2.getStatpercent());
+		print("" + w.getStatpercent());
+
+		print("" + w2.getWin());
+		print("" + w.getWin());
+		
+		print("" + w2);
+		print("" + w);
+		
 		
 //		out.println (d);
 //		out.println(d.getBark());
