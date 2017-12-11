@@ -55,12 +55,29 @@ public class StringStuff {
 		String s3 = s1 + s2;
 		String s4 = "";
 		for(int i = 0; i < s3.length(); i++) {
-			if(i % 2 != 0) {
-				s4 += "-";
-			}
 			s4 += s3.charAt(i);
+			if(i != s3.length() - 1)
+				s4 += "-";
 		}
 		System.out.println(s4);
+		
+		//Up down up down
+		String s1l= "";
+		String s2l= "";
+		for(int i = 0; i < s3.length(); i++) {
+			if(i % 2 == 0) {
+				s2l += s3.charAt(i);
+				s1l += " ";
+			} else {
+				s1l += s3.charAt(i);
+				s2l += " ";
+			}
+			
+		}
+		System.out.println(s1l);
+		System.out.println(s2l);
+		
+		
 		return "";
 	}
 
