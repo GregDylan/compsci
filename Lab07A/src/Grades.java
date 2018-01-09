@@ -27,7 +27,9 @@ public class Grades
 	public double getTotal()
 	{
 		double total = 0.0;
-	
+		for(int i = 0; i < grades.length; i++) {
+			total += grades[i];
+		}
 		
 		return total;
 	}

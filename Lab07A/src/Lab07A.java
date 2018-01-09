@@ -22,6 +22,6 @@ public class Lab07A
 		test.setGrades(new double[]{1,2,3,4,5,6,7,8,9});
 		System.out.println(test);
 		
-		out.println ("\n\nProgram completed by:  your name here");
+		out.println ("\n\nProgram completed by:  Matteo Cordray");
 		}
 }
