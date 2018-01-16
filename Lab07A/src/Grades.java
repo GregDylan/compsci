@@ -7,18 +7,18 @@ import static java.lang.System.*;
 
 public class Grades
 {
-	private double[] grades;
+	public double[] grades = {};
 
 	//**finish this initialization constructor
 	public Grades(double[] nums)
 	{
-		
+		grades = nums;
 	}
 
 	//**finish this mutator
 	public void setGrades(double[] nums)
 	{
-		
+		grades = nums;
 	}
 
 	
@@ -39,7 +39,7 @@ public class Grades
 	public double getAverage()
 	{
 		double average=0.0;
-
+		average = getTotal() / grades.length;
 
 
 		return average;
@@ -56,7 +56,9 @@ public class Grades
 	public double getHighest()
 	{
 		double max=0.0;
-		
+		double[] maxarray = grades;
+		Arrays.sort(maxarray);
+		max = maxarray[maxarray.length - 1];
 
 		
 		return max;
@@ -67,7 +69,9 @@ public class Grades
 	public double getLowest()
 	{
 		double min=0;
-		
+		double[] minarray = grades;
+		Arrays.sort(minarray);
+		min = minarray[0];
 
 		
 		return min;
@@ -81,12 +85,19 @@ public class Grades
 	
 	public String toString( )
 	{
+		for(int i = 0; i < grades.length; i++) {
+			System.out.println("grade " + i + ": " + grades[i]);
+		}
 		String output="";
 		
-	
-		
+		System.out.println("Total: " + getTotal());
+		System.out.println("Average: " + getAverage());
+		System.out.println("Maximum: " + getHighest());
+		System.out.println("Minimum: " + getLowest());
+		System.out.println("***************************************************");
 		return output;
 	}
 }
+
 
 
