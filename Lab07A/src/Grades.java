@@ -48,7 +48,12 @@ public class Grades
 	//**this method will return the average with the lowest grade dropped
 	public double getAverageDropLowest()
 	{
-		return 0;
+		double lowest=0.0;
+		double[] array = grades;
+		Arrays.sort(array);
+		lowest = array[0];
+		double average = ((getTotal() - lowest)/ (grades.length - 1));
+		return average;
 	}
 	
 	//**this method will return the maximum of all the elements
@@ -94,6 +99,12 @@ public class Grades
 		System.out.println("Average: " + getAverage());
 		System.out.println("Maximum: " + getHighest());
 		System.out.println("Minimum: " + getLowest());
+		System.out.println("Average with dropped lowest: " + getAverageDropLowest());
+		if(getAverageDropLowest() > getAverage()) {
+			System.out.println("WOW! Your average went up " + (getAverageDropLowest() - getAverage()) + " points!");
+		} else {
+			System.out.println("OUCH! Your average went down " + (getAverage() - getAverageDropLowest()) + " points!");
+		}
 		System.out.println("***************************************************");
 		return output;
 	}
