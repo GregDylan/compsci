@@ -11,7 +11,7 @@ public class Lab07C
 		String[] names = new String[100];
 		int[] grades = new int[100];
 		int count=0;
-		Scanner file = new Scanner (new File("Lab07c.dat"));
+		Scanner file = new Scanner (new File("resources/Lab07c.dat"));
 		while (file.hasNext())
 		{
 			String line = file.nextLine();
